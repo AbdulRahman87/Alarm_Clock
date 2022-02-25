@@ -20,7 +20,7 @@ function setAlarm() {
     if (!regex.test(inp.value)) {
         inp.classList.add('is-invalid');
     }
-    else if (timeToAlarm < 0) {
+    if (timeToAlarm < 0) {
         inp.classList.add('is-invalid');
      }
     else if(timeToAlarm > 0) {
