@@ -17,7 +17,7 @@ function setAlarm() {
 
     timeToAlarm = alarmDate - now;
     // console.log(`Time remaining: ${timeToAlarm}`);
-    if (timeToAlarm < 0) {
+    if (timeToAlarm < 0 !(regex.test(inp.value))) {
         inp.classList.add('is-invalid');
     }
     else {
