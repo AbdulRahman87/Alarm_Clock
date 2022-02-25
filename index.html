@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>|| Alarm Clock ||</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <script src="JS/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="text-center d-block m-auto my-2" id="alert"></div>
+        <div class="bg-primary text-light border rounded display-3 text-center my-3 py-3">Enter time to set Alarm.</div>
+
+        <div id="time" class="text-center fs-5 my-3">Current time: <i id="italicTime"></i></div>
+
+        <input id="inp" type="text" class="form-control text-center w-50 m-auto "
+            placeholder="Enter the time in yyyy-mm-dd hh:mm:ss">
+        <small id="timevalid" class="form-text text-center text-danger invalid-feedback">Incorrect time format or past time is entered.</small>
+        <button id="btn" class="btn my-3 btn-outline-primary m-auto d-block">Set Alarm</button>
+
+        <div id="set" class="fs-3 text-center"></div>
+        <div id="remaining" class="fs-5 text-center"></div>
+    </div>
+</body>
+
+<script src="JS/alarm.js"></script>
+
+</html>
