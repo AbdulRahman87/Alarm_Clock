@@ -19,11 +19,8 @@ function setAlarm() {
     // console.log(`Time remaining: ${timeToAlarm}`);
     if (!regex.test(inp.value)) {
         inp.classList.add('is-invalid');
-         if (timeToAlarm < 0){
-             inp.classList.adr('is-invalid');
-          }
     }
-    else {
+    else if(timeToAlarm > 0) {
         showNotification();
         setTimeout(() => {
             ringBell();
